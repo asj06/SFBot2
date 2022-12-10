@@ -11,9 +11,9 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
     ABOUT_TXT = """<b>✯ Mʏ Nᴀᴍᴇ : {}</b>
 
-<b>✯ Cʀᴇᴀᴛᴏʀ : <a href=https://t.me/kunal_nagar_01>𒆜 𝖪ᴜɴᴀʟ ࿐</a></b>
+<b>✯ Cʀᴇᴀᴛᴏʀ : <a href=https://t.me/SF_Hero>ツ Dᴀʀᴇᴅᴇᴠɪʟ</a></b>
 
-<b>✯ Uᴘᴅᴀᴛᴇs : <a href=https://t.me/kd_botz>KD Bᴏᴛᴢ ⚡</a></b>
+<b>✯ Uᴘᴅᴀᴛᴇs : <a href=https://t.me/SF_Links>⚡ SᴛʀᴇᴀᴍɪɴɢFʀᴇᴀᴋs ⚡</a></b>
 
 <b>✯ Bᴜɪʟᴅ Sᴛᴀᴛᴜs : ᴠ2.0.62 [Sᴛᴀʙʟᴇ]</b>"""
 
@@ -191,9 +191,9 @@ Pʟᴇᴀsᴇ Cʜᴇᴄᴋ Yᴏᴜʀ Sᴘᴇʟʟɪɴɢ 🤧</b>
     OWNER_INFO = """
 <b>⍟───[ ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟꜱ ]───⍟
     
-• ꜰᴜʟʟ ɴᴀᴍᴇ : 𒆜 𝖪ᴜɴᴀʟ ࿐『🇮🇳』
-• ᴜꜱᴇʀɴᴀᴍᴇ : @Kunal_Nagar_01
-• ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ : <a href='t.me/x_kunal_01'>𝖪ᴜɴᴀʟ ࿐</a></b>
+• ꜰᴜʟʟ ɴᴀᴍᴇ : ツ Dᴀʀᴇᴅᴇᴠɪʟ
+• ᴜꜱᴇʀɴᴀᴍᴇ : @SF_Hero
+• ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ : <a href='t.me/SF_Hero'>ツ Dᴀʀᴇᴅᴇᴠɪʟ</a></b>
 """
 
     KD_IMDB = """
