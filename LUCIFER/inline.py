@@ -103,9 +103,10 @@ async def answer(bot, query):
 def get_reply_markup(query):
     buttons = [
         [
-            InlineKeyboardButton('Search again', switch_inline_query_current_chat=query)
-        ]
-        ]
+            InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ Aɢᴀɪɴ 🔎', switch_inline_query_current_chat=query)
+        ],[
+            InlineKeyboardButton('🔥 Oᴜʀ Gʀᴏᴜᴘ 🔥', url="https://telegram.me/SF_Request")
+        ]]
     return InlineKeyboardMarkup(buttons)
 
 
