@@ -151,7 +151,7 @@ async def next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages")]  
+            [InlineKeyboardButton("ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages")]
         )
     elif off_set is None:
         btn.append([InlineKeyboardButton("ᴘᴀɢᴇs", callback_data="pages"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages"), InlineKeyboardButton("ɴᴇxᴛ", callback_data=f"next_{req}_{key}_{n_offset}")])
@@ -436,12 +436,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     file_id=file_id,
                     caption=script.FILE_CHANNEL_TXT.format(title, size, query.from_user.mention, query.message.chat.title, temp.U_NAME),
                     protect_content=True if ident == "filep" else False,
-                    #reply_markup=InlineKeyboardMarkup(
-                     #   [[
-                      #    InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                       #   InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                        #]]
-                    #)
+                    reply_markup=InlineKeyboardMarkup(
+                        [[
+                          InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
+                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                        ]]
+                    )
                 )
                 mh8 = await query.message.reply(script.FILE_READY_TXT.format(query.from_user.mention, title, size),
                 True,
@@ -493,14 +493,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
             file_id=file_id,
             caption=f_caption,
             protect_content=True if ident == 'checksubp' else False,
-            #reply_markup=InlineKeyboardMarkup(
-             #   [
-              #   [
-               #   InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                #  InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-               #]
-                #]
-            #)
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                  InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
+                  InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+               ]
+                ]
+            )
         )
             
     elif query.data == "pages":
@@ -742,12 +742,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
     elif query.data == "kd_cnl":
             cnlbtn = [[
-                      InlineKeyboardButton('Gʀᴏᴜᴘ', url='t.me/SF_request'),
-                      InlineKeyboardButton('Cʜᴀɴɴᴇʟ', url='t.me/SFLinks')
-                     ], [
-                      InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', url='t.me/SFDiscuss'),
-                      InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url='t.me/SFLinks')
-                     ], [
+                      InlineKeyboardButton('Gʀᴏᴜᴘ', url='t.me/sf_request'),
+                      InlineKeyboardButton('Cʜᴀɴɴᴇʟ', url='t.me/sflinks')
+                     ],[
                       InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start")
                      ]]
             reply_markup = InlineKeyboardMarkup(cnlbtn)
