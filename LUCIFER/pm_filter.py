@@ -436,12 +436,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     file_id=file_id,
                     caption=script.FILE_CHANNEL_TXT.format(title, size, query.from_user.mention, query.message.chat.title, temp.U_NAME),
                     protect_content=True if ident == "filep" else False,
-                    reply_markup=InlineKeyboardMarkup(
-                        [[
-                          InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                        ]]
-                    )
+                    #reply_markup=InlineKeyboardMarkup(
+                     #   [[
+                      #    InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
+                       #   InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                        #]]
+                    #)
                 )
                 mh8 = await query.message.reply(script.FILE_READY_TXT.format(query.from_user.mention, title, size),
                 True,
@@ -493,14 +493,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
             file_id=file_id,
             caption=f_caption,
             protect_content=True if ident == 'checksubp' else False,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                  InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                  InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-               ]
-                ]
-            )
+            #reply_markup=InlineKeyboardMarkup(
+             #   [
+              #   [
+               #   InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
+                #  InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+               #]
+                #]
+            #)
         )
             
     elif query.data == "pages":
@@ -536,15 +536,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "start":
         buttons = [[
                     InlineKeyboardButton('➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-                ],[
-                    InlineKeyboardButton('🍁 Oᴡɴᴇʀ', callback_data="owner_info"),
-                    InlineKeyboardButton('🌿 Sᴜᴘᴘᴏʀᴛ', callback_data="kd_cnl")
-                ],[
-                    InlineKeyboardButton('❗ Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('🕵️ Aʙᴏᴜᴛ', callback_data='about'),
-                ],[
-                    InlineKeyboardButton('🔒 Cʟᴏsᴇ Mᴇɴᴜ', callback_data='close_data')
-                  ]]
+                  ],[
+            InlineKeyboardButton('🎭 Mʏ Gʀᴏᴜᴘ 🎭', url=f'http://t.me/sf_request'),
+            InlineKeyboardButton('☘️ Mʏ Cʜᴀɴɴᴇʟ ☘️', url='https://t.me/SFLinks')
+           ],[
+            InlineKeyboardButton('☀️ Jᴏɪɴ Tʜɪs Cʜᴀɴɴᴇʟ ᴛᴏ Usᴇ Mᴇ ☀️', url='https://t.me/SFLinks')
+            ],[
+            InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ Hᴇʀᴇ 🔍', switch_inline_query_current_chat='')]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -744,8 +742,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
     elif query.data == "kd_cnl":
             cnlbtn = [[
-                      InlineKeyboardButton('Lᴜᴄɪғᴇʀ Bᴏᴛ Lᴏɢs', url="https://t.me/LuciferBot_logs")
-                     ], [
                       InlineKeyboardButton('Gʀᴏᴜᴘ', url='t.me/SF_request'),
                       InlineKeyboardButton('Cʜᴀɴɴᴇʟ', url='t.me/SFLinks')
                      ], [
